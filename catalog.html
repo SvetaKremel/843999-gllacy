@@ -9,24 +9,26 @@
   		<nav class="main-navigation">
   			<div class="main-header-logo">
           <a class="main-header-logo" href="index.html">
-  				  <img src="img/logo.svg" width="#" height="#" alt="Логотип Магазина Глэйси">
-        </a>
+  				   <img src="img/logo.svg" width="154" height="64" alt="Логотип Магазина Глэйси">
+          </a>
   			</div>
   			<ul class="site-navigation">
-  				<li class="site-navigation-current"><a href="#">Каталог</a></li>
-  				<li><a href="#">Доставка и оплата</a></li>
-  				<li><a href="#">О компании</a></li>
+  				 <li class="site-navigation-current"><a href="#">Каталог</a></li>
+  				 <li><a href="#">Доставка и оплата</a></li>
+  				 <li><a href="#">О компании</a></li>
   			</ul>
-  			<div class="user-navigation">
-  				<a href="#"><span class="search">Поиск</span></a>
-  				<a href="#"><span class="login-link">Вход</span></a>
-  				<a href="#"><span class="basket">Корзина</span></a>
-  			</div>
-  			<p>
-  				С 10 до 20 ежедневно<br>
-  				<b>8 812 450 25 25</b>
-  			</p>
-  		</nav>
+  		  <ul> class="user-navigation">
+            <li><a href="#"><span class="search">Поиск</span></a></li>
+            <li><a href="#"><span class="login-link">Вход</span></a></li>
+            <li><a href="#"><span class="basket">Корзина</span></a></li>
+        </ul>
+          <!--
+  			  <p>
+            С 10 до 20 ежедневно<br>
+            <a href="tel:8 812 450 25 25"><b>8 812 450 25 25</b></a>
+          </p>
+          -->
+        </nav>
   	</header>
     <main class="container">
       <ul class="breadcrumbs">
@@ -43,67 +45,45 @@
         <h2 class="visyally-hiden">Каталог товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-             <h3>
-               <a href="#">
-                 <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-               </a>
-             </h3>
-             <div class="catalog-item-img">
-               <a href="#">
-                 <img src="img/produkt-1.jpg" width="#" height="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-               </a>
-               <b>310</b>
-               <span>P</span>
-               <span>/кг</span>
-             </div>
+              <section>
+                <div class="catalog-item-img">
+                  <img src="img/produkt-1.jpg" width="#" height="#" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <p>
+                    <b>310</b>
+                    <span>P</span>
+                    <span>/кг</span>
+                  </p>
+                </div>
+              </section>
           </li> 
           <!--остальные товары по аналогии,если код правильный-->
         </ul>
       </section>
       <!--Здесь переключатели страниц-->
     </main>
-        <footer class="main-footer">
-      <div class="footer-social">
-        <ul>
-          <li>
-            <a href="#" class="social-button">Твиттер</a>
-          </li>
-          <li>
-            <a href="#" class="social-button">Инстаграмм</a>
-          </li>
-          <li>
-            <a href="#" class="social-button">Фэйсбук</a>
-          </li>
-          <li>
-            <a href="#" class="social-button">Вконтакте</a>
-          </li>
+    <footer class="main-footer">
+        <ul class="footer-social">
+          <li><a href="#" class="social-button">Твиттер</a></li>
+          <li><a href="#" class="social-button">Инстаграмм</a></li>
+          <li><a href="#" class="social-button">Фэйсбук</a></li>
+          <li><a href="#" class="social-button">Вконтакте</a></li>
         </ul>
-      </div>
-      <ul class="more-info">
-        <li>
-          <a href="#">
-            <b>Для поставщиков</b>  
+        <ul class="more-info">
+          <li>
+            <a href="#"><b>Для поставщиков</b></a>
+          </li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+        <div class="footer-copyright">
+            <a href="#">
+              <img src="#" width="#" height="#" alt="Логотип HTML Academy">
             </a>
-          </li>
-          <li>
-            <a href="#">О производстве</a>
-          </li>
-          <li>
-            <a href="#">Наши документы</a>
-          </li>
-          <li>
-            <a href="#">Экологические стандарты</a>
-          </li>
-      </ul>
-      <div class="footer-copyright">
-        <a href="#">
-          <img src="#" width="#" height="#" alt="Логотип HTML Academy">
-        </a>
-        <P>
-          Сделано в <a href="#">HTML Academy</a>
-          2017
-        </P>  
-      </div>
+            <P>
+              Сделано в <a href="#">HTML Academy</a>2017
+            </P>  
+        </div>
     </footer>
   </body>
 </html>
