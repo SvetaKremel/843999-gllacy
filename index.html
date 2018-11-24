@@ -11,14 +11,43 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a>
+              <ul class="catalog-navigation">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li class="current-catalog-navigation"><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
       </nav>
       <ul class="user-navigation">
         <li><a href="#"><span class="search">Поиск</span></a></li>
-        <li><a href="#"><span class="login-link">Вход</span></a></li>
+          <section>
+            <h2 class="visyally-hidden">Форма поиска</h2>
+            <form action="#" method="get" class="search">
+               <label class="visyally-hidden" for="user-search">Поиск по сайту</label>
+              <input type="search" id="user-search" name="" placeholder="Что ищем?">
+              <input type="submit" name="search-now"class="submit" value="Поиск">
+            </form>
+          </section>
+        <li><a href="login.html"><span class="login-link">Вход</span></a>
+          <section class="modal modal-login">
+            <h2 class="visyally-hidden">Личный кабинет</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visyally-hidden" for="user-login">Электронная почта</label>
+              <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="Электронная почта"><br>
+              <label class="visyally-hidden" for="user-password">Пароль</label>
+              <input type="password" id="user-password" name="password" placeholder="Пароль">
+              <button class="enter" type="button">Войти</button><br>
+              <a class="restore" href="#">Забыли пароль?</a><br>
+              <a class="new-registration" href="#">Новая регистрация</a>
+            </form>
+          </section>
+        </li>
         <li><a href="#"><span class="basket">Корзина</span></a></li>
       </ul>
     </header>
@@ -127,13 +156,28 @@
       <section class="subscription">
         <h2 class="visyally-hidden">Подписаться на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--Здесь будет форма-->
+       <form class="subscription-form" action="#" method="post">
+        <input type="email" id="input-mail" placeholder="Электронная почта">
+        <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
      <div class="map">
       <img src="img/map-with-pin.jpg" width="1200" height="430" alt="Карта: как нас найти">
       <p class="adress">Адрес главного офиса<br> и офлайн-магазина:<br>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</p>
       <p>Для заказов по телефону:<br>8 812 450-25-25<br>(с 10 до 20 ежедневно)</p>
      </div>
+     <section>
+       <h2>Мы вам обязательно ответим!</h2>
+       <form action="#" method="post">
+        <p><label class="visyally-hidden" for="name">Имя</label>
+         <input type="text" name="user-name" id="name" class="user-name" placeholder="Как вас зовут?"></p>
+         <p><label class="visyally-hidden" for="email-for-answer">Почта</label>
+         <input type="text" name="email" id="email-for-answer" class="user-email" placeholder="Ваша почта для ответа?"></p>
+         <textarea name="comments" cols="20" rows="10">Напишите что нибудь...</textarea>
+       </form>
+       <button  class="button" type="submit">Отправить</button>
+       <button class="modal-close" type="button">Закрыть</button>
+     </section>
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
