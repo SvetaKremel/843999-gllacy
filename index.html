@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин мороженого "Глэйси"</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -25,15 +28,16 @@
         </ul>
       </nav>
       <ul class="user-navigation">
-        <li><a href="#"><span class="search">Поиск</span></a></li>
-          <section>
+        <li><a href="#"><span class="search">Поиск</span></a>
+          <section class="search-popap">
             <h2 class="visyally-hidden">Форма поиска</h2>
             <form action="#" method="get" class="search">
-               <label class="visyally-hidden" for="user-search">Поиск по сайту</label>
-              <input type="search" id="user-search" name="" placeholder="Что ищем?">
+              <label class="visyally-hidden" for="user-search">Поиск по сайту</label>
+              <input type="search" id="user-search" name="search" placeholder="Что ищем?">
               <input type="submit" name="search-now"class="submit" value="Поиск">
             </form>
           </section>
+        </li>
         <li><a href="login.html"><span class="login-link">Вход</span></a>
           <section class="modal modal-login">
             <h2 class="visyally-hidden">Личный кабинет</h2>
@@ -54,7 +58,7 @@
     <main class="container">
       <h1 class="visyally-hidden">Магазин мороженого Глэйси
       </h1>
-      <div class="slaider">
+      <section class="slider">
             <p>
               С 10 до 20 ежедневно<br>
             <a href="tel:88124502525"><b>8 812 450 25 25</b></a>
@@ -62,19 +66,19 @@
          <div class="slider-1">
            <img src="img/icecream-slaider-1.png" width="1045" height="881" alt="Давайте оба:Крем-брюле и пломбир с малиновым джемом">
            <p class="name-slaider-1">Крем-брюле и пломбир с малиновым джемом</p>
-           <button class="button-slaider-1">Давайте оба!</button>
+           <button class="button-slaider-1" type="button">Давайте оба!</button>
          </div>
           <div class="slider-2">
             <img src="img/icecream-slaider-2.png" width="1045" height="881" alt="Давайте оба:Шоколадный пломбир и лимонный сорбет">
             <p class="name-slaider-1">Шоколадный пломбир и лимонный сорбет</p>
-            <button class="button-slaider-1">Давайте оба!</button>
+            <button class="button-slaider-2" type="button">Давайте оба!</button>
           </div>
-           <div class="slider-3">
+            <div class="slider-3">
             <img src="img/icecream-slaider-3.png" width="1045" height="881" alt="Давайте оба:Пломбир с помадкой и клубничный щербет">
             <p class="name-slaider-1">Пломбир с помадкой и клубничный щербет</p>
-            <button class="button-slaider-1">Давайте оба!</button>
+            <button class="button-slaider-3" type="button">Давайте оба!</button>
          </div>
-      </div>
+      </section>
       <section class="banner">
         <div class="additive-raspberrie">
           <h3>Малинка даром!</h3>
@@ -166,7 +170,7 @@
       <p class="adress">Адрес главного офиса<br> и офлайн-магазина:<br>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</p>
       <p>Для заказов по телефону:<br>8 812 450-25-25<br>(с 10 до 20 ежедневно)</p>
      </div>
-     <section>
+     <section class="feedback">
        <h2>Мы вам обязательно ответим!</h2>
        <form action="#" method="post">
         <p><label class="visyally-hidden" for="name">Имя</label>
@@ -197,7 +201,7 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="108" height="39" alt="Логотип HTML Academy"></a>
+        <a  class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="108" height="39" alt="Логотип HTML Academy"></a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
     </footer>

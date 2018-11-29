@@ -1,0 +1,225 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #859d8f;
+}
+ 
+a {
+	text-decoration: none;
+}
+
+.breadcrumbs a,
+.user-navigation a,
+.main-navigation a {
+	color: #ffffff;
+}
+
+.catalog-navigation,
+.search-popap,
+.modal-login,
+.feedback,
+.basket-user {
+	display: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #859d8f;
+}
+
+
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #859d8f;
+}
+
+.user-navigation .search {
+	background-image: url("../img/loupe.svg")
+}
+.breadcrumbs a {
+	text-decoration: underline;
+}
+
+.slider p,
+.container p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #859d8f;
+}
+.slider a {
+	 color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation,
+.catalog-navigation,
+.features-list,
+.footer-social,
+.more-info,
+.breadcrumbs,
+.catalog-list {
+   list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.user-navigation a:active {
+	color: #323232;
+	background-color: #f8f7f4;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #ffbc9e
+}
+.title {
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+}
+
+.features-list {
+	color: #323232;
+}
+
+.features {
+	background-color: #f3e8d3;
+	background-image: url("../img/waffle.jpg");
+
+}
+
+.blog-news {
+    background-color: #ffffff;
+	background-image: url("../img/strowbery-background.jpg");
+}
+
+.blog-news h2 {
+    color: #323232;
+    font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+.blog-news a {
+	color: #323232;
+    font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+
+.subscription {
+  	background-color: #f8f7f4;
+  	color: #5a5a5a;
+}
+
+button {
+  background-color: #ee5d3e;
+  color: #fefefe;
+  font-size: 18px;
+  font-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+button:hover,
+button:focus {
+	background-color: #ed7360;
+}
+
+button:active {
+background-color: #d94e36;
+}
+
+.subscription-form input {
+	border-radius: 5px;
+
+}
+
+.main-footer {
+	color: #ffffff;
+	background-color: #859d8f;
+
+}
+
+.more-info {
+	text-align: center;    
+}
+.more-info a {
+	color: #ffffff;
+	text-decoration: underline;
+
+}
+
+.more-info a:hover,
+.more-info a:focus,
+.more-info a:active {
+	color: #ffbc9e;
+}
+
+.footer-copyright a {
+	color:#ffffff;
+	text-decoration: underline;
+} 
+.footer-copyright a:hover,
+.footer-copyright a:focus,
+.footer-copyright a:active {
+	color: #ffbc9e;
+	text-decoration: underline;
+}
+
+.htmlacademy-logo {
+	background-image: url("../img/logo-htmlacademy.svg");
+}
+
+.container h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color:#ffffff;
+}
+.catalog-item a {
+	text-decoration: underline;
+	color:#ffffff;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.catalog-item-price {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+	color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
