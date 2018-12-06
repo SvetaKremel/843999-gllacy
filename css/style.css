@@ -76,12 +76,21 @@ background-color: #d94e36;
 }
 
 .search-img {
+  position: relative;
+  padding-left: 30px;
+  }
+.search-img::before {
   content: "";
-  background-color: #a1b4a9;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
   background-image: url("../img/loupe.svg");
   background-repeat: no-repeat;
-  padding-left: 15px;
-  }
+}
+
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -94,18 +103,37 @@ background-color: #d94e36;
 }
 
 .basket {
+  position: relative;
+  padding-left: 30px;
+  }
+.basket::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 50%;
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
-  padding-left: 15px;
-  background-color: #a1b4a9;
 }
 
 .login-link {
+  position: relative;
+  padding-left: 30px;
+}
+.login-link::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
   background-image: url("../img/entrance.svg");
   background-repeat: no-repeat;
-  padding-left: 15px;
-  background-color: #a1b4a9;
 }
+
  
 .slider p {
   font-size: 14px;
@@ -125,6 +153,7 @@ background-color: #d94e36;
   background-color: #f3e8d3;
   background-image: url("../img/waffle.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .features .title {
@@ -140,28 +169,59 @@ background-color: #d94e36;
   font-weight: 400;
   color: #323232;
 }
-.features-item-1 {
-  background-image: url("../img/ice-cream.svg");
-  background-repeat: no-repeat;
+.features-item {
+ position: relative;
+ padding-left: 50px; 
 }
 
-.features-item-2 {
+.ice-cream::before {
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+}
+
+ .eco::before {
   background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
 }
-.features-item-3 {
+ .cow::before {
   background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
 }
-.features-item-4 {
+
+ .thermometer::before {
   background-image: url("../img/thermometer.svg");
   background-repeat: no-repeat;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
 }
 
 .blog-news {
-    background-color: #ffffff;
+  background-color: #ffffff;
   background-image: url("../img/strowbery-background.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .blog-news h2 {
@@ -178,16 +238,18 @@ background-color: #d94e36;
   font-weight: 700;
   text-decoration: underline;
 }
-
-.subscription {
-    background-color: #f8f7f4;
-    color: #5a5a5a;
+.subscription-background {
     background-image: url("../img/bg-post.svg");
     background-repeat: no-repeat;
+    background-size: contain;
+}
+.subscription {
+    background-color: #f8f7f4;
+    width: 400px;
+    color: #5a5a5a;
   }
 .subscription-form input {
   border-radius: 5px;
-
 }
 
 .adress {
@@ -209,21 +271,54 @@ background-color: #d94e36;
   color: #ffffff;
   background-color: #859d8f;
 
-}.
-.social-button-1 {
+}
+.social-button {
+  position: relative;
+  padding-left: 32px;
+}
+
+.twitter::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
 }
 
-.social-button-2 {
+.instagram::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 5px;
   background-image: url("../img/instagram.svg");
   background-repeat: no-repeat;
 }
-.social-button-3 {
+.fb::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 5px;
   background-image: url("../img/fb.svg");
   background-repeat: no-repeat;
 }
-.social-button-4 {
+.vk::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  top: 5px;
   background-image: url("../img/vk.svg");
   background-repeat: no-repeat;
 }
@@ -237,8 +332,18 @@ background-color: #d94e36;
   color: #ffffff;
   border-bottom: 1px solid rgba(173, 197, 184, 0.2);
 
+} 
+.more-info-icon {
+ position: relative;
+  padding-left: 15px;
 }
-.more-info:first-child {
+.more-info-icon::before { 
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
 }
