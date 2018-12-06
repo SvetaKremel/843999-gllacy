@@ -379,6 +379,18 @@ background-color: #d94e36;
 }
 
 .basket-current {
+  position: relative;
+  padding-left: 30px;
+}
+
+.basket-current::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 50%;
   background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
 }
