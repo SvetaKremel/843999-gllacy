@@ -64,7 +64,7 @@ background-color: #d94e36;
 
 .site-navigation a {
   color: #ffffff;
-  border-bottom: 1px solid rgba(173, 197, 184, 0.2);
+  border-bottom: 1px solid rgba(158, 178, 167, 0.2);
 }
 
 .user-navigation a {
@@ -77,16 +77,17 @@ background-color: #d94e36;
 
 .search-img {
   position: relative;
-  padding-left: 30px;
+  padding-left: 33px;
   }
+
 .search-img::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   position: absolute;
   left: 0;
-  top: 50%;
+  top:50%;
   background-image: url("../img/loupe.svg");
   background-repeat: no-repeat;
 }
@@ -100,18 +101,19 @@ background-color: #d94e36;
 .user-navigation a:active {
 	color: #323232;
 	background-color: #f8f7f4;
+  border-bottom: 1px solid rgba(158, 178, 167, 0.2);
 }
 
 .basket {
   position: relative;
-  padding-left: 30px;
+  padding-left: 33px;
   }
 .basket::before {
   content: "";
   display: block;
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   left: 0;
   top: 50%;
   background-image: url("../img/basket.svg");
@@ -120,13 +122,13 @@ background-color: #d94e36;
 
 .login-link {
   position: relative;
-  padding-left: 30px;
+  padding-left: 33px;
 }
 .login-link::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   position: absolute;
   left: 0;
   top: 50%;
@@ -137,9 +139,10 @@ background-color: #d94e36;
  
 .slider p {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 16px;
   font-weight: 700;
   color: #ffffff;
+  text-align: right;
 }
 
 .slider a {
@@ -147,6 +150,7 @@ background-color: #d94e36;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
+  text-align: right;
 }
 
 .features {
@@ -222,6 +226,7 @@ background-color: #d94e36;
   background-image: url("../img/strowbery-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: 0 0;
 }
 
 .blog-news h2 {
@@ -247,6 +252,7 @@ background-color: #d94e36;
     background-color: #f8f7f4;
     width: 400px;
     color: #5a5a5a;
+    background-position: 0 0;
   }
 .subscription-form input {
   border-radius: 5px;
@@ -323,8 +329,6 @@ background-color: #d94e36;
   background-repeat: no-repeat;
 }
 
-
-
 .more-info {
   text-align: center;    
 }
@@ -340,7 +344,7 @@ background-color: #d94e36;
 .more-info-icon::before { 
   content: "";
   display: block;
-  width: 15px;
+  width: 13px;
   height: 15px;
   position: absolute;
   left: 0;
@@ -354,15 +358,16 @@ background-color: #d94e36;
   color: #ffbc9e;
 }
 
-.footer-copyright .htmlacademy-made {
+.htmlacademy-made {
   color:#ffffff;
   border-bottom: 1px solid rgba(173, 197, 184, 0.2);
-  
 } 
+
+/* страница Каталог*/
 
 .contacts p {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 16px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -423,8 +428,12 @@ background-color: #d94e36;
   border-bottom: 1px solid rgba(173, 197, 184, 0.2);
 }
 
-.catalog-item-price {
+.catalog-item:hover {
+  background-color: #9bafa3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
+.catalog-item-price {
 color: #ffffff;
 font-weight: 700;
 font-size: 45px;
@@ -438,3 +447,93 @@ line-height: 45px;
   font-size: 30px;
 }
 
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  color: #ffffff;
+}
+
+.pagination-item a:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+/*сетка*/
+html,
+body {
+  min-width: 1200px;
+  min-height: 2416px;
+}
+
+.main-header {
+  margin-top: 9px;
+  margin-bottom: 10px;
+  display: flex;
+  /* Временно для сетки */
+  min-height: 64px;
+}
+
+.main-header-logo {
+width: 154px;
+height: 64px;
+margin-left: 27px;
+margin-right: 24px;
+  /* Временно для сетки */
+}
+
+.main-navigation {
+  /* Временно для сетки */
+  min-height: 64px;
+}
+
+.site-navigation {
+margin: 0;
+padding: 0;
+min-height: 64px;
+display: flex;
+justify-content: space-between;
+margin-top: 32px;
+width: 349px;
+min-height: 64px;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  min-height: 64px;
+  display: flex;
+  margin-left: 375px;
+  margin-right: 27px;
+  margin-top: 22px;
+  width: 246px;
+  justify-content: space-between;
+}
+
+.main-footer {
+  display: flex;
+  align-content: center;
+  padding-top: 18px;
+  padding-bottom: 25px;
+  justify-content: space-around;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 186px;
+  justify-content: space-between;
+  margin-left: 28px;
+  margin-bottom: 29px;
+  margin-top: 36px;
+}
+
+.more-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 37px;
+  margin-bottom: 30px;
+  width: 330px;
+}
