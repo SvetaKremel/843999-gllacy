@@ -16,23 +16,34 @@ a {
 }
 
 .button {
-  background-color: #ee5d3e;
-  color: #fefefe;
   font-size: 18px;
   font-height: 24px;
   font-weight: 700;
+  color: #fefefe;
   text-align: center;
   vertical-align: middle;
+  background-color: #ee5d3e;
+  border-radius: 40px;
+  padding: 10px 24px;
+  background-color: #ee725a;
+  background: linear-gradient(#f26843, #e74b36);
   border: none;
+  box-shadow: 0 2px 2px #9e4334;
 }
 
 .button:hover,
 .button:focus {
+  color: #fefefe;
   background-color: #ed7360;
+  background: linear-gradient(#f58669, #ec6f5e);
+  box-shadow: 0 2px 2px #9e4334;
 }
 
 .button:active {
-background-color: #d94e36;
+  color: #fefefe;
+  background-color: #db5338;
+  background: linear-gradient(#c73f2c, #e0603e);
+  box-shadow: inset 0px 2px 2px #9e4334;
 }
 
 .site-navigation,
@@ -42,7 +53,8 @@ background-color: #d94e36;
 .footer-social,
 .more-info,
 .breadcrumbs,
-.catalog-list {
+.catalog-list,
+.catalog-list-top {
    list-style: none;
 }
 
@@ -225,8 +237,7 @@ background-color: #d94e36;
   background-color: #ffffff;
   background-image: url("../img/strowbery-background.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 0;
+  background-size: cover;
 }
 
 .blog-news h2 {
@@ -246,11 +257,10 @@ background-color: #d94e36;
 .subscription-background {
     background-image: url("../img/bg-post.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .subscription {
     background-color: #f8f7f4;
-    width: 400px;
     color: #5a5a5a;
     background-position: 0 0;
   }
@@ -258,19 +268,21 @@ background-color: #d94e36;
   border-radius: 5px;
 }
 
+
 .adress {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #323232;
-  background-color: #fdfefe;
+  background-color: #ffffff;
+
 }
 .adress-bold {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #323232;
-  background-color: #fdfefe;
+  background-color: #ffffff;
 } 
 
 .main-footer {
@@ -333,6 +345,8 @@ background-color: #d94e36;
   text-align: center;    
 }
 .more-info a {
+   font-size: 13px;
+   line-height: 18px;
   color: #ffffff;
   border-bottom: 1px solid rgba(173, 197, 184, 0.2);
 
@@ -358,6 +372,11 @@ background-color: #d94e36;
   color: #ffbc9e;
 }
 
+.footer-copyright {
+   font-size: 12px;
+   line-height: 18px;
+   text-align: left;
+}
 .htmlacademy-made {
   color:#ffffff;
   border-bottom: 1px solid rgba(173, 197, 184, 0.2);
@@ -464,8 +483,17 @@ line-height: 45px;
 html,
 body {
   min-width: 1200px;
-  min-height: 2416px;
+  padding: 0;
+  margin: 0;
 }
+
+/*
+.container {
+  min-width: 1200px;
+  padding: 0;
+  margin: 0;
+}
+*/
 
 .main-header {
   margin-top: 9px;
@@ -510,15 +538,144 @@ min-height: 64px;
   width: 246px;
   justify-content: space-between;
 }
+/*main*/
 
-.main-footer {
+/*
+.same-boх {
+  min-height: 560px;
+  min-height: 220px;
+  border-radius: 15px;
+  margin-left: 27px;
+  margin-right: 27px;
+  margin-bottom: 40px;
+  padding-left: 20px;
   display: flex;
-  align-content: center;
-  padding-top: 18px;
-  padding-bottom: 25px;
-  justify-content: space-around;
 }
 
+*/
+.banner {
+  display: flex;
+  margin-left: 27px;
+  margin-right: 29px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.additive-raspberrie {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 560px;
+  min-height: 229px;
+  background-image: url("../img/raspberry.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.additive-chocolate {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 560px;
+  min-height: 229px;
+  background-image: url("../img/chocolate.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.catalog-list-top {
+  display: flex;
+  flex-basis: 1146px;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+
+}
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 267px;
+  min-height: 267px;
+
+}
+
+.features {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 1146px;
+  min-height: 306px; 
+  margin-left: 27px;
+  margin-right: 27px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+ }
+
+
+ .news-subscription {
+ display: flex;
+ margin-left: 27px;
+ margin-right: 29px;
+ margin-bottom: 40px;
+ justify-content: space-between;
+ }
+
+.blog-news {
+display: flex; 
+flex-basis: 560px;
+min-height: 220px;
+border-radius: 15px;
+flex-direction: column;
+}
+.subscription-background {
+display: flex;
+width: 560px;
+height: 220px;
+}
+.subscription {
+  flex-basis: 549px;
+  min-height: 211px;
+  border-radius: 15px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  margin-left: 6px;
+  margin-right: 5px;
+}
+
+.map-img {
+  width: 1200px;
+  height: 400px;
+}
+.feedback-map {
+  width: 302px;
+  min-height: 305px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin-top: 63px;
+  margin-right: 27px;
+
+}
+
+
+
+.main-footer {
+  flex-basis: 1200px;
+  min-height: 103px;
+  display: flex;
+  margin-top: 1px;
+  padding-top: 18px;
+  padding-bottom: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
 .footer-social {
   margin: 0;
   padding: 0;
@@ -531,9 +688,15 @@ min-height: 64px;
 }
 
 .more-info {
-  display: flex;
+  display: flex; 
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 37px;
   margin-bottom: 30px;
   width: 330px;
+}
+.footer-copyright {
+  min-height: 44px;
+  flex-basis: 189px;
+
 }
