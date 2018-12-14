@@ -187,7 +187,10 @@ a {
 }
 .features-item {
  position: relative;
- padding-left: 50px; 
+ box-sizing: border-box;
+ flex-basis: 50%;
+ padding-left: 56px;
+ padding-right: 33px;
 }
 
 .ice-cream::before {
@@ -358,8 +361,8 @@ a {
 .more-info-icon::before { 
   content: "";
   display: block;
-  width: 13px;
-  height: 15px;
+  width: 15px;
+  height: 13px;
   position: absolute;
   left: 0;
   background-image: url("../img/heart.svg");
@@ -457,7 +460,17 @@ color: #ffffff;
 font-weight: 700;
 font-size: 45px;
 line-height: 45px;
+position: absolute;
+bottom: -30px;
+pointer-events: none;
+ text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
+.catalog-item-img {
+  position: relative;
+}
+.catalog-item-img img {
+  border-radius: 999px;
+    }
 
 .catalog-item-price-smaller {
   color: #ffffff;
@@ -480,26 +493,16 @@ line-height: 45px;
 }
 
 /*сетка*/
-html,
-body {
-  min-width: 1200px;
-  padding: 0;
-  margin: 0;
-}
 
+.wrapper {
+  width: 1146px;
+  margin: 0 auto;
+}
 /*
-.container {
-  min-width: 1200px;
-  padding: 0;
-  margin: 0;
-}
-*/
-
 .main-header {
   margin-top: 9px;
   margin-bottom: 10px;
   display: flex;
-  /* Временно для сетки */
   min-height: 64px;
 }
 
@@ -508,11 +511,9 @@ width: 154px;
 height: 64px;
 margin-left: 27px;
 margin-right: 24px;
-  /* Временно для сетки */
 }
 
 .main-navigation {
-  /* Временно для сетки */
   min-height: 64px;
 }
 
@@ -538,25 +539,48 @@ min-height: 64px;
   width: 246px;
   justify-content: space-between;
 }
-/*main*/
-
-/*
-.same-boх {
-  min-height: 560px;
-  min-height: 220px;
-  border-radius: 15px;
-  margin-left: 27px;
-  margin-right: 27px;
-  margin-bottom: 40px;
-  padding-left: 20px;
-  display: flex;
-}
 
 */
+
+.main-header {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 9px;
+}
+
+
+.main-header-logo {
+width: 154px;
+height: 64px;
+margin-right: 24px;
+}
+.main-navigation {
+display: flex;
+}
+.site-navigation {
+margin: 0 auto;
+padding: 0;
+display: flex;
+width: 350px;
+justify-content: space-between;
+margin-right: 374px;
+align-items: center;
+
+}
+
+.user-navigation {
+  display: flex;
+  margin-top: 22px;
+  width: 246px;
+  justify-content: space-between;
+}
+
+/*main*/
+
+
 .banner {
   display: flex;
-  margin-left: 27px;
-  margin-right: 29px;
+
   margin-bottom: 40px;
   justify-content: space-between;
 }
@@ -581,13 +605,11 @@ min-height: 64px;
   border-radius: 15px;
 }
 
-.catalog-list-top {
-  display: flex;
-  flex-basis: 1146px;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
 
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .catalog-item {
   display: flex;
@@ -598,30 +620,23 @@ min-height: 64px;
 }
 
 .features {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 1146px;
-  min-height: 306px; 
-  margin-left: 27px;
-  margin-right: 27px;
+
+  /*min-height: 306px;*/ 
   margin-bottom: 40px;
   border-radius: 15px;
 }
 
 .features-list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  padding: 20px;
+  padding-left: 20px;
  }
 
 
  .news-subscription {
  display: flex;
- margin-left: 27px;
- margin-right: 29px;
  margin-bottom: 40px;
  justify-content: space-between;
  }
@@ -651,6 +666,7 @@ height: 220px;
 .map-img {
   width: 1200px;
   height: 400px;
+  margin: 0 auto;
 }
 .feedback-map {
   width: 302px;
@@ -665,14 +681,11 @@ height: 220px;
 }
 
 
-
+/*
 .main-footer {
-  flex-basis: 1200px;
-  min-height: 103px;
   display: flex;
-  margin-top: 1px;
-  padding-top: 18px;
-  padding-bottom: 25px;
+  margin: 0 auto;
+  padding-bottom: 30px;
   justify-content: space-between;
   align-items: center;
 }
@@ -699,4 +712,42 @@ height: 220px;
   min-height: 44px;
   flex-basis: 189px;
 
+}
+*/
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.footer-social {
+  display: flex;
+  width: 220px; 
+}
+.social-button {
+  width: 32px;
+  height: 32px;
+  margin-right: 11px;
+
+  
+}
+.more-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 337px;
+  height: 50px;
+  margin: 0;
+  margin-top: 23px;
+  margin-left: 31px;
+  padding: 0;
+
+}
+.footer-copyright {
+ display: flex;
+ flex-direction: column;
+ margin-top: 18px;
+    margin-left: auto;
+}
+.logo-htmlacademy {
+  margin-left: 3px;
 }
