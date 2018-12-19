@@ -133,10 +133,11 @@ min-height: 64px;
 margin: 0;
 padding: 0;
 display: flex;
-width: 349px;
-justify-content: space-between;
-margin-right: 374px;
+width: 377px;
+justify-content: space-around;
+margin-right: 358px;
 align-items: center;
+
 background: rgba(234, 255, 45, 0.2);
 box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 
@@ -147,8 +148,8 @@ box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   padding: 0;
   display: flex;
   width: 246px;
-  min-height: 33px;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
@@ -157,6 +158,10 @@ box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   display: block;
   color: #ffffff;
   border-bottom: 1px solid rgba(158, 178, 167, 0.2);
+  vertical-align: middle;
+  padding: 9px 13px 10px 14px;
+  white-space: nowrap;
+  border-radius: 999px;
 }
 
 .user-navigation a {
@@ -166,6 +171,8 @@ box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   font-weight: 400;
   color: #ffffff;
   background-color: #859d8f;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 .site-navigation a:hover,
@@ -179,28 +186,25 @@ box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   border-bottom: 1px solid rgba(158, 178, 167, 0.2);
 }
 
-li .search-img {
- position: relative;
+ li .search-img {
+  position: relative;
   width: 33px;
-  height: 33px;
+  height: 32px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   }
 .search-img svg {
   position: absolute;
-  top: 28%;
-  left: 26%;
+  top: 25%;
+  left: 25%;
   width: 17px;
   height: 17px;
 }
 
 
 
-
 li .basket {
   position: relative;
-  width: 100px;
-  height: 33px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   padding-left: 45px;
@@ -220,10 +224,7 @@ li .basket {
 
 
 li .login-link {
-   display: block;
    position: relative;
-   max-width: 93px;
-   max-height: 32px;
    border-radius: 999px;
    background-color: rgba(255, 255, 255, 0.2);
    padding-left: 44px;
@@ -274,9 +275,51 @@ line-height: 60.5px;
   display: flex;
   margin-bottom: 40px;
   justify-content: space-between;
+  padding: 0;
 }
+.banner h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.banner p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 19px;
+} 
 
+
+.banner .button {
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+ 
+  padding-bottom: 12px;
+  padding-top: 18px;
+  padding-right: 22px;
+  padding-left: 22px;
+ 
+  margin-right: 21px;
+  margin-left: 350px;
+  margin-bottom: 23px;
+  margin-top: 26px;
+  text-align: center;
+  white-space: nowrap;
+
+}
 .additive-raspberrie {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-basis: 560px;
@@ -287,6 +330,8 @@ line-height: 60.5px;
 }
 
 .additive-chocolate {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-basis: 560px;
@@ -646,6 +691,8 @@ line-height: 60.5px;
 
 
 .catalog-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
