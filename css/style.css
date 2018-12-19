@@ -346,10 +346,8 @@ line-height: 60.5px;
   background-image: url("../img/waffle.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
-
-  /*min-height: 306px;*/ 
   margin-bottom: 40px;
   border-radius: 15px;
 }
@@ -359,9 +357,16 @@ line-height: 60.5px;
   line-height: 30px;
   font-weight: 400;
   color: #323232;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 29px;
+
 }
 
 .features-list {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -384,8 +389,8 @@ line-height: 60.5px;
   background-repeat: no-repeat;
   content: "";
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 49px;
   position: absolute;
   left: 0;
 }
@@ -395,8 +400,8 @@ line-height: 60.5px;
   background-repeat: no-repeat;
   content: "";
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 49px;
   position: absolute;
   left: 0;
 }
@@ -405,8 +410,8 @@ line-height: 60.5px;
   background-repeat: no-repeat;
   content: "";
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 49px;
   position: absolute;
   left: 0;
 }
@@ -416,8 +421,8 @@ line-height: 60.5px;
   background-repeat: no-repeat;
   content: "";
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 49px;
+  height: 49px;
   position: absolute;
   left: 0;
 }
