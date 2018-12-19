@@ -448,6 +448,7 @@ line-height: 60.5px;
 }
 
 .blog-news h2 {
+  display: block;
   margin: 0;
   padding: 0;
   margin-left: 20px;
@@ -458,14 +459,18 @@ line-height: 60.5px;
   font-weight: 400;
 
 }
+.blog-news h3 {
+  margin: 0;
+  padding: 0;
+}
 
 .blog-news a {
   margin: 0;
   padding: 0;
-  display: inline-block;
- margin-left: 19px;
- margin-right: 262px;
- color: #323232;
+  margin-left: 19px;
+  display: block;
+  width: 281px;
+  color: #323232;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
