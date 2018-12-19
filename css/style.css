@@ -434,6 +434,8 @@ line-height: 60.5px;
  }
 
 .blog-news {
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
   background-image: url("../img/strowbery-background.jpg");
   background-repeat: no-repeat;
@@ -446,18 +448,29 @@ line-height: 60.5px;
 }
 
 .blog-news h2 {
-    color: #323232;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 26px;
+  color: #323232;
+  font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+
 }
 
 .blog-news a {
-  color: #323232;
-    font-size: 24px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+ margin-left: 19px;
+ margin-right: 262px;
+ color: #323232;
+  font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-decoration: underline;
+
 }
 .subscription-background {
     background-image: url("../img/bg-post.svg");
