@@ -689,6 +689,9 @@ line-height: 60.5px;
   color:#ffffff;
 }
 
+/*ДЛЯ ИНДЕКСА*/
+
+
 
 .catalog-list {
   margin: 0;
@@ -696,13 +699,22 @@ line-height: 60.5px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .catalog-item {
   display: flex;
   flex-direction: column;
   flex-basis: 267px;
   min-height: 267px;
+  margin: 0;
+  padding: 0;
 
+}
+.catalog-item-name {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .catalog-item-name a {
@@ -734,6 +746,12 @@ pointer-events: none;
 .catalog-item-img img {
   border-radius: 999px;
     }
+
+.catalog-item-hit {
+display: block;
+background-image: url("../img/hit.svg");
+background-repeat: no-repeat;
+}
 
 .catalog-item-price-smaller {
   color: #ffffff;
