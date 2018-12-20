@@ -748,8 +748,6 @@ line-height: 60.5px;
 
 /*ДЛЯ ИНДЕКСА*/
 
-
-
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -775,11 +773,14 @@ line-height: 60.5px;
 }
 
 .catalog-item-name a {
+  margin: 0;
+  padding: 0;
   color: #ffffff;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   border-bottom: 1px solid rgba(173, 197, 184, 0.2);
+  text-align: center;
 }
 
 .catalog-item:hover {
@@ -788,29 +789,47 @@ line-height: 60.5px;
   }
 
 .catalog-item-price {
+  margin: 0;
+  padding: 0;
 color: #ffffff;
 font-weight: 700;
 font-size: 45px;
 line-height: 45px;
 position: absolute;
-bottom: -30px;
+bottom: 8px;
 pointer-events: none;
  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
+p.catalog-item-prise {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-item-img {
+  width: 267px;
+  height: 267px;
   position: relative;
 }
 .catalog-item-img img {
+  margin: 0;
+  padding: 0;
   border-radius: 999px;
     }
 
-.catalog-item-hit {
+.catalog-item-hit::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 61px;
+  height: 61px;
 display: block;
 background-image: url("../img/hit.svg");
 background-repeat: no-repeat;
 }
 
 .catalog-item-price-smaller {
+  margin: 0;
+  padding: 0;
   color: #ffffff;
   line-height: 45px;
   font-weight: 700;
