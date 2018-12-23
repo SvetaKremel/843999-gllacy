@@ -80,10 +80,8 @@ input[type="radio"].visually-hidden {
    list-style: none;
 }
 
+
 .catalog-navigation,
-.search-popap,
-.modal-login,
-.feedback,
 .basket-user  {
 	display: none;
 }
@@ -201,6 +199,206 @@ box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   width: 17px;
   height: 17px;
 }
+/*модалка и модалка  поиска*/
+
+.modal {
+  position: fixed;
+
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.modal-search {
+  width: 341px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  top: 59px;
+  left: 50%;
+  z-index: 2;
+}
+li .login-link {
+   position: relative;
+   border-radius: 999px;
+   background-color: rgba(255, 255, 255, 0.2);
+   padding-left: 44px;
+   padding-right: 16px;
+   padding-top: 7px;
+   padding-bottom: 9px;
+ }
+
+.login-link svg {
+  position: absolute;
+  left: 19%;
+  top: 22%;
+  width: 21px;
+  height: 19px;
+
+}
+
+.modal-login {
+  box-sizing: border-box;
+  min-width: 277px;
+  min-height: 214px;
+  padding: 20px 17px 22px 19px;
+
+
+  top: 59px;
+  left: 63%;
+  z-index: 2;
+
+   color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font: inherit;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+}
+.login-form p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+a.restore,
+a.new-registration {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f7f4;
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+} 
+
+
+.enter-a {
+  margin: 0;
+  padding: 0;
+ display: flex; 
+ justify-content: space-between;
+ align-items: flex-start;
+}
+
+.login-help {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.enter {
+  display: inline-block;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 44px;
+
+}
+
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+
+ width: 241px;
+ height: 44px;
+ box-sizing: border-box;
+ padding: 16px 99px 15px 15px;
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+
+
+/*модалка обратной связи*/
+
+.modal-feedback {
+  box-sizing: border-box;
+  width: 478px;
+  padding: 27px 24px 26px 25px;
+
+  top: 337px;
+  left: 50%;
+}
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  width: 18px;
+  height: 17px;
+
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 2px;
+
+  background-color: black;
+  width: 17px;
+  height: 2px;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-feedback h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal-feedback p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.feedback-form input[type="text"] {
+  color: #999999;
+  font-size: 16px;
+  line-height: 24px;
+  font: inherit;
+
+  box-sizing: border-box;
+  width: 267px;
+  height: 44px;
+  padding: 16px 71px 13px 15px;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+textarea {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 428px;
+  height: 155px;
+  margin-bottom: 25px;
+
+}
+
 
 
 
@@ -224,24 +422,7 @@ li .basket {
   }
 
 
-li .login-link {
-   position: relative;
-   border-radius: 999px;
-   background-color: rgba(255, 255, 255, 0.2);
-   padding-left: 44px;
-   padding-right: 16px;
-   padding-top: 7px;
-   padding-bottom: 9px;
- }
 
-.login-link svg {
-  position: absolute;
-  left: 19%;
-  top: 22%;
-  width: 21px;
-  height: 19px;
-
-}
 
 .button-navigation:hover path,
 .button-navigation:focus path,
@@ -275,6 +456,7 @@ line-height: 60.5px;
 .banner {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
   justify-content: space-between;
   min-width: 1146px;
@@ -344,8 +526,11 @@ line-height: 60.5px;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 40px;
   border-radius: 15px;
+  z-index: 1;
 }
 
 .features .title {
@@ -380,7 +565,8 @@ line-height: 60.5px;
  box-sizing: border-box;
  flex-basis: 50%;
  padding-left: 56px;
- padding-right: 33px;
+ margin-bottom: 12px;
+
 }
 
 .ice-cream::before {
@@ -484,7 +670,7 @@ line-height: 60.5px;
     display: flex;
     width: 560px;
     height: 220px;
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 .subscription {
   display: flex;
@@ -581,14 +767,19 @@ line-height: 60.5px;
   background-color: #ffffff;
 } 
 
+
+
 .main-footer {
   color: #ffffff;
   background-color: #859d8f;
+  font-size: 18px;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
 
 }
+
 .footer-social {
   display: flex;
   width: 220px; 
@@ -597,14 +788,20 @@ line-height: 60.5px;
 .social-button {
   position: relative;
   padding-left: 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 11px;
 }
 
 .twitter::before {
+
+  
   content: "";
   display: block;
   width: 32px;
   height: 32px;
   position: absolute;
+  top: 5px;
   left: 0;
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
@@ -646,7 +843,7 @@ line-height: 60.5px;
 
 .more-info {
   text-align: center;   
-   display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 337px;
@@ -657,12 +854,15 @@ line-height: 60.5px;
   padding: 0;
 }
 .more-info a {
+  display: flex;
    font-size: 13px;
    line-height: 18px;
   color: #ffffff;
   border-bottom: 1px solid rgba(173, 197, 184, 0.2);
-
+text-align: left;
+flex-direction: column;
 } 
+
 .more-info-icon {
  position: relative;
   padding-left: 15px;
@@ -694,14 +894,24 @@ line-height: 60.5px;
     margin-left: auto;
 }
 
+.footer-copyright a {
+   border-bottom: 1px solid rgba(158, 178, 167, 0.2);
+   color: #ffffff;
+ }
+ 
+ .footer-copyright a:hover,
+ .footer-copyright a:focus,
+ .footer-copyright a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(158, 178, 167, 0.3);
+} 
+
 
 .logo-htmlacademy {
   margin-left: 3px;
 }
-.htmlacademy-made {
-  color:#ffffff;
-  border-bottom: 1px solid rgba(173, 197, 184, 0.2);
-} 
+
+
 
 /* страница Каталог*/
 
