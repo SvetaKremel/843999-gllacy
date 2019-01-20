@@ -58,7 +58,9 @@
                     <label class="visually-hidden" for="user-password">Пароль</label>
                     <input type="password" id="user-password" name="password" placeholder="Пароль">
                     <div class="enter-a">
-                      <button class=" button enter" type="button">Войти</button><br>
+                      <p>
+                      <button class=" button enter" type="button">Войти</button>
+                    </p>
                       <p class="login-help">
                         <a class="restore" href="#">Забыли пароль?</a><br>
                         <a class="new-registration" href="#">Новая регистрация</a>
@@ -98,9 +100,14 @@
         </nav>
       </header>
     <main class="container">
-      <p class="contacts"> С 10 до 20 ежедневно<br>
-             <a href="tel:88124502525">8 812 450-25-25</a>
-       </p>
+      <div class="position">
+        <p class="contacts">
+            С 10 до 20, ежедневно
+          </p>
+          <p>
+            <a  class="tell" href="tel:88124502525">8 812 450-25-25</a>
+          </p>
+      </div>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -186,7 +193,7 @@
       </section>
       <section class="catalog wrapper">
         <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul class="catalog-list">
+        <ul class="catalog-list catalog-inner">
           <li class="catalog-item">
             <div class="catalog-item-img">
               <a href="#">
